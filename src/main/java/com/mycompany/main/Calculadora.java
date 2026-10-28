@@ -19,7 +19,6 @@ public class Calculadora {
        
         Scanner scanner = new Scanner(System.in);
         
-        // Bloque try-finally para asegurar que el Scanner se cierre al finalizar o salir
         try {
             for (;;){
                 System.out.println("====== Calculadora ======");
@@ -32,7 +31,7 @@ public class Calculadora {
                 if (opc.equalsIgnoreCase("//")) {
                      System.out.println("CIERRE: Saliendo del programa.");
                      System.out.println("--------------");
-                     break; // Cambiado a break para que salga del ciclo y permita llegar al finally
+                     break;
                 }
                 
                 if (!opc.equals("+") && !opc.equals("-") && !opc.equals("*") && !opc.equals("/")) {
